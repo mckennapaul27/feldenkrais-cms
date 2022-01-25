@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_layout_nav_links",
+  "info": {
+    "displayName": "NavLink",
+    "icon": "apple-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "isDropDown": {
+      "type": "boolean",
+      "default": false
+    },
+    "text": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "dropDown": {
+      "displayName": "dropDown",
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.drop-down"
+    }
+  }
+}

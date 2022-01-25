@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "classes",
+  "info": {
+    "singularName": "class",
+    "pluralName": "classes",
+    "displayName": "class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "time": {
+      "type": "time"
+    },
+    "day": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::day.day",
+      "inversedBy": "class"
+    },
+    "practitioner": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::practitioner.practitioner",
+      "mappedBy": "class"
+    },
+    "extraNotes": {
+      "type": "richtext"
+    }
+  }
+}
