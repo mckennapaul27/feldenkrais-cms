@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "benefit_pages",
+  "info": {
+    "singularName": "benefit-page",
+    "pluralName": "benefit-pages",
+    "displayName": "benefitPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}
