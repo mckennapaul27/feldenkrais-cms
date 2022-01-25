@@ -33,7 +33,7 @@
       "target": "api::location.location",
       "inversedBy": "classes"
     },
-    "day": {
+    "dayOfWeek": {
       "type": "enumeration",
       "enum": [
         "Monday",
