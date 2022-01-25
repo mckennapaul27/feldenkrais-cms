@@ -15,28 +15,6 @@
     "name": {
       "type": "string"
     },
-    "address": {
-      "type": "text"
-    },
-    "phone": {
-      "type": "string"
-    },
-    "email": {
-      "type": "string"
-    },
-    "profileImage": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos"
-      ]
-    },
-    "website": {
-      "type": "string"
-    },
     "profile": {
       "type": "richtext"
     },
@@ -46,15 +24,30 @@
       "target": "api::location.location",
       "inversedBy": "practitioners"
     },
-    "class": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::class.class",
-      "inversedBy": "practitioner"
-    },
     "slug": {
       "type": "uid",
       "targetField": "name"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "qualification": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "classes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::class.class",
+      "mappedBy": "practitioners"
     }
   }
 }

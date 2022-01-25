@@ -19,6 +19,12 @@
       "relation": "manyToMany",
       "target": "api::practitioner.practitioner",
       "mappedBy": "regions"
+    },
+    "classes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::class.class",
+      "mappedBy": "regions"
     }
   }
 }
