@@ -16,7 +16,8 @@
       "type": "string"
     },
     "profile": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "regions": {
       "type": "relation",
