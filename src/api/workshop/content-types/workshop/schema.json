@@ -4,7 +4,8 @@
   "info": {
     "singularName": "workshop",
     "pluralName": "workshops",
-    "displayName": "workshop"
+    "displayName": "workshop",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -27,6 +28,14 @@
       "type": "string"
     },
     "contactNumber": {
+      "type": "string"
+    },
+    "region": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
+    },
+    "location": {
       "type": "string"
     }
   }
