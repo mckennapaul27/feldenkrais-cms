@@ -30,11 +30,6 @@
     "contactNumber": {
       "type": "string"
     },
-    "region": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::location.location"
-    },
     "location": {
       "type": "string"
     }
